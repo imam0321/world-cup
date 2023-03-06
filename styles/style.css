@@ -1,0 +1,60 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,400;0,700;1,200&family=Roboto:wght@300;400;700&display=swap");
+
+/* common or utilitys */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+/*---------------------
+    Greatest sections
+----------------------- */
+.greatest {
+  display: flex;
+  width: 80%;
+  height: 550px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 25px;
+}
+.greatest-info {
+  width: 35%;
+  padding: 3% 5% 0 8%;
+}
+.greatest-title {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+span {
+  color: rgb(167, 197, 232);
+}
+.greatest-thumnail {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 35px;
+}
+.watch-buttun {
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 12px 30px;
+  border-radius: 5px;
+}
+.greatest-banner {
+  width: 45%;
+  height: 70%;
+}
+.greatest-banner img {
+  height: 500px;
+  padding: 10% 0 0 3%;
+}
