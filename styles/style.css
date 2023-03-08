@@ -31,13 +31,14 @@ header {
   font-weight: 700;
   color: white;
   margin-bottom: 10px;
+  line-height: 130%;
 }
 .great {
   color: rgb(167, 197, 232);
 }
 .greatest-thumnail {
-  font-size: 12.5px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 300;
   color: white;
   margin-bottom: 35px;
 }
@@ -55,8 +56,8 @@ header {
   height: 70%;
 }
 .greatest-banner img {
-  height: 500px;
-  padding: 10% 0 0 3%;
+  height: 498px;
+  padding: 10% 0 0 5%;
 }
 
 /*-----------------
@@ -79,7 +80,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 0 30px;
-  margin-left: 8%;
+  margin-left: 9%;
   margin-right: 2%;
 }
 .side-bar a {
@@ -140,4 +141,32 @@ header {
 }
 .timeline-view span {
   margin-right: 20px;
+}
+
+/*-------------------
+     Footer section 
+---------------------*/
+.goals {
+  height: 360px;
+  text-align: center;
+  background-color: rgb(17, 16, 16);
+}
+.goals h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(212, 210, 210);
+  padding-top: 8%;
+}
+.goals hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid rgb(67, 67, 67);
+  margin: 3% 10%;
+}
+.informations a {
+  text-decoration: none;
+  color: rgb(212, 210, 210);
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 40px;
 }
