@@ -17,7 +17,7 @@ header {
 ----------------------- */
 .greatest {
   display: flex;
-  width: 80%;
+  width: 85%;
   height: 550px;
   background-color: rgb(29, 29, 29);
   border-radius: 25px;
@@ -32,7 +32,7 @@ header {
   color: white;
   margin-bottom: 10px;
 }
-span {
+.great {
   color: rgb(167, 197, 232);
 }
 .greatest-thumnail {
@@ -41,7 +41,7 @@ span {
   color: white;
   margin-bottom: 35px;
 }
-.watch-buttun {
+.watch-button {
   font-size: 18px;
   font-weight: 300;
   text-decoration: none;
@@ -57,4 +57,87 @@ span {
 .greatest-banner img {
   height: 500px;
   padding: 10% 0 0 3%;
+}
+
+/*-----------------
+     Match details
+-------------------*/
+.blogs-ditails {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+/*-------------
+     Side Bar
+---------------*/
+.side-bar {
+  height: 280px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-left: 8%;
+  margin-right: 2%;
+}
+.side-bar a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 28px;
+}
+#match {
+  padding: 15px 25px;
+}
+#group {
+  padding: 15px 60px;
+}
+#blog {
+  padding: 15px 80px;
+}
+.side-bar a:hover {
+  color: white;
+  background-color: red;
+}
+
+/*---------------
+   Blogs details
+-----------------*/
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  margin-right: 8%;
+}
+.blog-banner {
+  width: 95%;
+}
+.transfer-info {
+  width: 60%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.transfer-info button {
+  font-size: 14px;
+  padding: 5px 15px;
+}
+.transfer-info p {
+  font-size: 16px;
+  font-weight: 700;
+  width: 250px;
+}
+.timeline-view {
+  display: flex;
+  align-items: center;
+}
+.timeline-view img {
+  margin-right: 10px;
+}
+.timeline-view span {
+  margin-right: 20px;
 }
