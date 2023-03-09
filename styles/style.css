@@ -73,12 +73,13 @@ header {
      Side Bar
 ---------------*/
 .side-bar {
-  height: 280px;
-  background-color: rgb(29, 29, 29);
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  height: 280px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 10px;
   padding: 0 30px;
   margin-left: 9%;
   margin-right: 2%;
@@ -183,10 +184,22 @@ header {
 
 /* Mobile Devices */
 @media only screen and (max-width: 687px) {
-  .greatest {
-    flex-direction: column;
-    width: 90%;
+  .greatest,
+  .greatest-banner img {
     height: 100%;
+  }
+  .greatest,
+  .blogs-ditails,
+  .informations a {
+    flex-direction: column;
+  }
+  .blogs-ditails,
+  .informations a {
+    justify-content: center;
+  }
+
+  .greatest {
+    width: 90%;
     text-align: center;
   }
   .greatest-info {
@@ -204,14 +217,9 @@ header {
   }
   .greatest-banner img {
     width: 70%;
-    height: 100%;
     padding: 10% 15% 0 25%;
   }
 
-  .blogs-ditails {
-    flex-direction: column;
-    justify-content: center;
-  }
   .side-bar {
     background-color: white;
     margin: 0 0 2% 0;
@@ -228,9 +236,61 @@ header {
   }
   .informations a {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 250%;
+    line-height: 260%;
     margin-left: 10%;
+  }
+}
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .greatest-info,
+  .greatest-banner {
+    width: 100%;
+  }
+
+  .greatest {
+    width: 90%;
+    height: 60%;
+  }
+  .greatest-info {
+    padding-top: 10%;
+  }
+  .greatest-title {
+    font-size: 2.5em;
+  }
+  .greatest-banner {
+    height: 90%;
+  }
+  .greatest-banner img {
+    width: 80%;
+  }
+
+  .blogs-ditails {
+    flex-direction: column;
+  }
+  .side-bar {
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    height: 5%;
+    margin: -5% 0 5% 0;
+  }
+  #match {
+    margin-right: 5%;
+  }
+  #group {
+    margin-right: 5%;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+    margin: 0;
+  }
+  .informations {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .informations a {
+    line-height: 350%;
   }
 }
