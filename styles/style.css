@@ -98,6 +98,8 @@ header {
   padding: 15px 60px;
 }
 #blog {
+  color: white;
+  background-color: red;
   padding: 15px 80px;
 }
 .side-bar a:hover {
@@ -169,4 +171,39 @@ header {
   font-size: 14px;
   font-weight: 300;
   padding-right: 40px;
+}
+
+/*---------------- 
+    Media Queries 
+------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width: 687px) {
+  body {
+    width: 100%;
+  }
+  .greatest {
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+  }
+  .greatest-info {
+    width: 80%;
+    padding: 5% 10% 0 10%;
+  }
+  .greatest-title {
+    font-size: 26px;
+  }
+  .greatest-thumnail {
+    font-size: 12px;
+  }
+  .greatest-banner {
+    width: 95%;
+  }
+  .greatest-banner img {
+    width: 70%;
+    height: 100%;
+    padding: 10% 15% 0 25%;
+  }
 }
