@@ -87,7 +87,8 @@ header {
   text-decoration: none;
   font-weight: 700;
   color: black;
-  background-color: white;
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(222, 222, 222);
   border-radius: 10px;
   margin-top: 28px;
 }
@@ -98,8 +99,6 @@ header {
   padding: 15px 60px;
 }
 #blog {
-  color: white;
-  background-color: red;
   padding: 15px 80px;
 }
 .side-bar a:hover {
@@ -117,8 +116,13 @@ header {
   grid-row-gap: 15px;
   margin-right: 8%;
 }
+.blog {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 15px;
+  padding-bottom: 15px;
+}
 .blog-banner {
-  width: 95%;
+  width: 100%;
 }
 .transfer-info {
   width: 60%;
@@ -179,9 +183,6 @@ header {
 
 /* Mobile Devices */
 @media only screen and (max-width: 687px) {
-  body {
-    width: 100%;
-  }
   .greatest {
     flex-direction: column;
     width: 90%;
@@ -205,5 +206,31 @@ header {
     width: 70%;
     height: 100%;
     padding: 10% 15% 0 25%;
+  }
+
+  .blogs-ditails {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .side-bar {
+    background-color: white;
+    margin: 0 0 2% 0;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-content: center;
+    margin: 0 0 10% 0;
+  }
+  .goals h1 {
+    font-size: 30px;
+  }
+  .informations a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 250%;
+    margin-left: 10%;
   }
 }
